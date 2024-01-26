@@ -1,40 +1,187 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+Custom_Snackbar is a simple and elegant way to generate personalized alerts
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+## 🛠 Attributes
+- `title`: Top label that will be shown in the body
+- `message`: Body message reflecting some error message, success message etc.
+- `color`: Color of SnackBar body
+- `contentType`: ContentType class reflecting failure, success, help or warning.
+- `inMaterialBanner`: Simply configure the working according to `showMaterialBanner`
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Some ways to use Custom_snackbar
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+It only needs to be called within a function passing only four values ​​per parameter
 
 ```dart
-const like = 'sample';
+ElevatedButton(onPressed: (){
+
+    CustomSnack.init(
+    context, 
+    size: MediaQuery.sizeOf(context), 
+    title: 'MEU TESTE',
+    text: 'Lorem Ipsum is simply dummy text of the '
+    );
+
+}, child: const Text("model 1"))
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# custom_snackbar
+
+Everything is customizable, from colors, icons, gradient, watermark, font stylization and much more.
+
+
+```dart
+ElevatedButton(onPressed: (){
+
+    CustomSnack.init(
+    context, 
+    size: MediaQuery.sizeOf(context), 
+    title: 'MEU TESTE',
+    text: 'Lorem Ipsum is simply dummy text of the printing and', 
+    backgrounds:  Colors.amber,
+    color: Colors.amber,
+    titleColor: Colors.black,
+    textColor: Colors.black,
+    icons: Icons.error,
+    iconColor: Colors.black,
+    backgroundImage: false,
+    degradeIcon: false,
+    assetsImage: "assets/01.png"
+    );
+
+}, child: const Text("model 2")),
+```
+
+
+## Example
+
+
+```dart
+import 'package:custom_snackbar/custom_snackbar.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home:  MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+
+            ElevatedButton(onPressed: (){
+
+              CustomSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum', 
+                textAlign: TextAlign.left,
+                alignCenter: false
+              );
+
+            }, child: const Text("model 0")),
+            
+            ElevatedButton(onPressed: (){
+
+              CustomSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 
+                titleColor: Colors.white
+              );
+
+            }, child: const Text("model 1")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 
+                backgrounds:  Colors.amber,
+                color: Colors.amber,
+                titleColor: Colors.black,
+                textColor: Colors.black,
+                icons: Icons.error,
+                iconColor: Colors.black,
+                backgroundImage: false,
+                degradeIcon: false,
+                assetsImage: "assets/01.png"
+              );
+
+            }, child: const Text("model 2")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  const Color.fromARGB(255, 255, 179, 0),
+                color: const Color.fromARGB(255, 252, 130, 0),
+                titleColor: Colors.black,
+                textColor: Colors.black,
+                icons: Icons.error,
+                iconColor: Colors.black,
+                alignCenter: false,
+                textAlign: TextAlign.left
+              );
+
+            }, child: const Text("model 3")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.amber,
+                color: Colors.amber,
+                titleColor: Colors.black,
+                textColor: Colors.black,
+                icons: Icons.error,
+                iconColor: Colors.black,
+                backgroundImage: false,
+                degradeIcon: false
+              );
+
+            }, child: const Text("model 4")),
+
+            
+            
+            
+            
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
+
