@@ -161,7 +161,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                                 color: widget.backgrounds ?? const Color.fromARGB(255, 172, 13, 2),
                                 borderRadius: BorderRadius.circular(widget.borderRadius ?? 10),
                                 image: widget.backgroundImage == true ? DecorationImage(
-                                  image: AssetImage(widget.assetsImage ?? 'packages/custom_snackbar/assets/background01.png'), 
+                                  image: AssetImage(widget.assetsImage ?? 'packages/custom_alert_snackbar/assets/background01.png'), 
                                   fit: BoxFit.fill, 
                                 )
                                 : null,
@@ -208,7 +208,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                                     height: 50,
                                     width: 50,
                                     child: Center(child: SvgPicture.asset(
-                                      "packages/custom_snackbar/assets/tes.svg",
+                                      "packages/custom_alert_snackbar/assets/tes.svg",
                                       color: widget.color ?? const Color.fromARGB(255, 133, 9, 0),
                                     ),
                                   )),
@@ -218,7 +218,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                                       height: 50,
                                       width: 50,
                                       child: Center(
-                                        child: Image.asset("packages/custom_snackbar/assets/deg_mensseger.png")
+                                        child: Image.asset("packages/custom_alert_snackbar/assets/deg_mensseger.png")
                                       )
                                     ),
                                   ),
