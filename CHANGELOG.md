@@ -1,7 +1,7 @@
 ## 1.0.0 - Modelo para teste
 
-* TODO: Iniciando esse modelo para testes iniciais
+* Starting this model for testing
 
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Describe initial release.
