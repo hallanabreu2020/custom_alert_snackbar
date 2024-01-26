@@ -1,7 +1,7 @@
 Custom_Alert_Snackbar is a simple and elegant way to generate personalized alerts
 
 
-It only needs to be called within a function passing only four values ​​per parameter
+## It only needs to be called within a function passing only four values ​​per parameter
 
 ```dart
 ElevatedButton(onPressed: (){
@@ -18,7 +18,7 @@ ElevatedButton(onPressed: (){
 
 
 
-Everything is customizable, from colors, icons, gradient, watermark, font stylization and much more.
+## Everything is customizable, from colors, icons, gradient, watermark, font stylization and much more.
 
 
 ```dart
