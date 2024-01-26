@@ -1,8 +1,8 @@
-name: custom_snackbar
+name: custom_alert_snackbar
 description: A package for developing a personalized snackbar
 version: 1.0.0
 autor: Hallan Abreu
-homepage: https://github.com/hallanabreu2020/custom_snackbar
+homepage: https://github.com/hallanabreu2020/custom_alert_snackbar
 
 environment:
   sdk: '>=3.1.0 <4.0.0'

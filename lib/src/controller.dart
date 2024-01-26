@@ -8,7 +8,7 @@ import 'package:flutter_svg/svg.dart';
 
 
 
-class CustomSnack{
+class CustomAlertSnack{
   static init(BuildContext context,{
     required Size size, 
     required String title, 
@@ -37,7 +37,7 @@ class CustomSnack{
       elevation: 0,
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
-      content: CustomSnackLocal(
+      content: CustomAlertSnackLocal(
         size: size, 
         text: text, 
         title: title, 
@@ -73,8 +73,8 @@ class CustomSnack{
 
 
 
-class CustomSnackLocal extends StatefulWidget {
-  const CustomSnackLocal({
+class CustomAlertSnackLocal extends StatefulWidget {
+  const CustomAlertSnackLocal({
     super.key, 
     required this.size, 
     required this.text, 
@@ -128,10 +128,10 @@ class CustomSnackLocal extends StatefulWidget {
   final TextAlign? textAlign;
 
   @override
-  State<CustomSnackLocal> createState() => _CustomSnackLocalState();
+  State<CustomAlertSnackLocal> createState() => _CustomAlertSnackLocalState();
 }
 
-class _CustomSnackLocalState extends State<CustomSnackLocal> {
+class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
   bool stateScreen = true;
   _close(){
     setState(() {

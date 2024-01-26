@@ -1,4 +1,5 @@
-import 'package:custom_snackbar/custom_snackbar.dart';
+
+import 'package:custom_alert_snackbar/custom_alert_snackbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class MyHomePage extends StatelessWidget {
 
             ElevatedButton(onPressed: (){
 
-              CustomSnack.init(
+              CustomAlertSnack.init(
                 context, 
                 size: MediaQuery.sizeOf(context), 
                 title: 'MEU TESTE',
@@ -43,7 +44,7 @@ class MyHomePage extends StatelessWidget {
             
             ElevatedButton(onPressed: (){
 
-              CustomSnack.init(
+              CustomAlertSnack.init(
                 context, 
                 size: MediaQuery.sizeOf(context), 
                 title: 'MEU TESTE',
@@ -55,7 +56,7 @@ class MyHomePage extends StatelessWidget {
 
             ElevatedButton(onPressed: (){
 
-              CustomSnack.init(
+              CustomAlertSnack.init(
                 context, 
                 size: MediaQuery.sizeOf(context), 
                 title: 'MEU TESTE',
@@ -75,7 +76,7 @@ class MyHomePage extends StatelessWidget {
 
             ElevatedButton(onPressed: (){
 
-              CustomSnack.init(
+              CustomAlertSnack.init(
                 context, 
                 size: MediaQuery.sizeOf(context), 
                 title: 'MEU TESTE',
@@ -94,7 +95,7 @@ class MyHomePage extends StatelessWidget {
 
             ElevatedButton(onPressed: (){
 
-              CustomSnack.init(
+              CustomAlertSnack.init(
                 context, 
                 size: MediaQuery.sizeOf(context), 
                 title: 'MEU TESTE',
