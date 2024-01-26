@@ -1,5 +1,5 @@
 
-import 'package:custom_alert_snackbar/custom_alert_snackbar.dart';
+import 'package:custom_snackbar/custom_alert_snackbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {

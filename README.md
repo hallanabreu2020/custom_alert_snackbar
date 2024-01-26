@@ -1,14 +1,5 @@
-Custom_Snackbar is a simple and elegant way to generate personalized alerts
+Custom_Alert_Snackbar is a simple and elegant way to generate personalized alerts
 
-## 🛠 Attributes
-- `title`: Top label that will be shown in the body
-- `message`: Body message reflecting some error message, success message etc.
-- `color`: Color of SnackBar body
-- `contentType`: ContentType class reflecting failure, success, help or warning.
-- `inMaterialBanner`: Simply configure the working according to `showMaterialBanner`
-
-
-## Some ways to use Custom_snackbar
 
 It only needs to be called within a function passing only four values ​​per parameter
 
