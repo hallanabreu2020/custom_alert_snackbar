@@ -43,6 +43,26 @@ ElevatedButton(onPressed: (){
 }, child: const Text("model 2")),
 ```
 
+###  Some images of what can be done
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.41.36.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.42.54.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.43.04.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.43.15.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.43.34.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.43.58.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.44.09.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.44.20.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.44.30.png" height='600px' />
+
+<img src="https://raw.githubusercontent.com/hallanabreu2020/images/main/Captura%20de%20Tela%202024-01-27%20%C3%A0s%2012.44.44.png" height='600px' />
 
 ## Example
 

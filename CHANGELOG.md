@@ -1,3 +1,7 @@
+## 1.0.4 - Modelo pronto para iniciar os testes
+
+* Update image
+
 ## 1.0.3 - Modelo para teste
 
 * Update

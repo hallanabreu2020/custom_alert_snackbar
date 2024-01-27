@@ -1,5 +1,5 @@
 
-import 'package:custom_snackbar/custom_alert_snackbar.dart';
+import 'package:custom_alert_snackbar/custom_alert_snackbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home:  MyHomePage(),
+      debugShowCheckedModeBanner: false
     );
   }
 }
@@ -67,7 +68,6 @@ class MyHomePage extends StatelessWidget {
                 textColor: Colors.black,
                 icons: Icons.error,
                 iconColor: Colors.black,
-                backgroundImage: false,
                 degradeIcon: false,
                 assetsImage: "assets/01.png"
               );
@@ -112,6 +112,101 @@ class MyHomePage extends StatelessWidget {
 
             }, child: const Text("model 4")),
 
+            ElevatedButton(onPressed: (){
+
+              CustomAlertSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.amber,
+                color: Colors.amber,
+                titleColor: Colors.black,
+                textColor: Colors.black,
+                icons: Icons.error,
+                iconColor: Colors.black,
+                backgroundImage: false,
+                round: false
+              );
+
+            }, child: const Text("model 5")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomAlertSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.amber,
+                color: const Color.fromARGB(255, 0, 148, 5),
+                titleColor: Colors.white,
+                textColor: Colors.white,
+                icons: Icons.error,
+                iconColor: Colors.white,
+                round: false,
+                assetsImage: "assets/02.png"
+              );
+
+            }, child: const Text("model 6")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomAlertSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.green,
+                color: const Color.fromARGB(255, 0, 148, 5),
+                titleColor: Colors.white,
+                textColor: Colors.white,
+                icons: Icons.error,
+                iconColor: Colors.white,
+                round: false,
+                assetsImage: "assets/03.png"
+              );
+
+            }, child: const Text("model 7")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomAlertSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.green,
+                color: const Color.fromARGB(255, 0, 148, 5),
+                titleColor: Colors.white,
+                textColor: Colors.white,
+                icons: Icons.error,
+                iconColor: Colors.white,
+                round: false,
+                assetsImage: "assets/05.png"
+              );
+
+            }, child: const Text("model 8")),
+
+            ElevatedButton(onPressed: (){
+
+              CustomAlertSnack.init(
+                context, 
+                size: MediaQuery.sizeOf(context), 
+                title: 'MEU TESTE',
+                text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survive', 
+                backgrounds:  Colors.amber,
+                color: Colors.amber,
+                titleColor: Colors.white,
+                textColor: Colors.white,
+                icons: Icons.error,
+                iconColor: Colors.white,
+                round: false,
+                assetsImage: "assets/06.png"
+              );
+
+            }, child: const Text("model 9")),
+
             
             
             
@@ -119,6 +214,15 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          
+        },
+        // foregroundColor: customizations[index].$1,
+        // backgroundColor: customizations[index].$2,
+        // shape: customizations[index].$3,
+        child: const Icon(Icons.navigation),
+      )
     );
   }
 }

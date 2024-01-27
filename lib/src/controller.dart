@@ -31,11 +31,12 @@ class CustomAlertSnack{
     bool degradeIcon = true,
     double? iconWidth,
     bool alignCenter = true,
-    TextAlign? textAlign
+    TextAlign? textAlign,
+    bool round = true
     }){
      final snackBar = SnackBar(
       elevation: 0,
-      behavior: SnackBarBehavior.floating,
+      // behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
       content: CustomAlertSnackLocal(
         size: size, 
@@ -59,7 +60,8 @@ class CustomAlertSnack{
         degradeIcon: degradeIcon,
         iconWidth: iconWidth,
         alignCenter: alignCenter,
-        textAlign: textAlign
+        textAlign: textAlign,
+        round: round
       )
       
     );
@@ -97,7 +99,8 @@ class CustomAlertSnackLocal extends StatefulWidget {
     required this.degradeIcon,
     this.iconWidth,
     this.textAlign,
-    required this.alignCenter
+    required this.alignCenter,
+    this.round
   });
 
   final Size size;
@@ -127,6 +130,8 @@ class CustomAlertSnackLocal extends StatefulWidget {
   final bool alignCenter;
   final TextAlign? textAlign;
 
+  final bool? round;
+
   @override
   State<CustomAlertSnackLocal> createState() => _CustomAlertSnackLocalState();
 }
@@ -142,7 +147,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: widget.size.height,
-      width: widget.size.width - 40,
+      width: widget.size.width,
       child:  Visibility(
         visible: stateScreen,
         child: Stack(
@@ -156,7 +161,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                           Padding(
                             padding: const EdgeInsets.fromLTRB(0, 25, 0, 30),
                             child: Container(
-                              width: widget.size.width - 60,
+                              width: widget.size.width - 50,
                               decoration: BoxDecoration(
                                 color: widget.backgrounds ?? const Color.fromARGB(255, 172, 13, 2),
                                 borderRadius: BorderRadius.circular(widget.borderRadius ?? 10),
@@ -207,8 +212,14 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                                   SizedBox(
                                     height: 50,
                                     width: 50,
-                                    child: Center(child: SvgPicture.asset(
+                                    child: Center(
+                                      child: widget.round!
+                                    ?SvgPicture.asset(
                                       "packages/custom_alert_snackbar/assets/tes.svg",
+                                      color: widget.color ?? const Color.fromARGB(255, 133, 9, 0),
+                                    )
+                                    :SvgPicture.asset(
+                                      "packages/custom_alert_snackbar/assets/quad.svg",
                                       color: widget.color ?? const Color.fromARGB(255, 133, 9, 0),
                                     ),
                                   )),
@@ -218,7 +229,9 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                                       height: 50,
                                       width: 50,
                                       child: Center(
-                                        child: Image.asset("packages/custom_alert_snackbar/assets/deg_mensseger.png")
+                                        child: widget.round!
+                                        ?Image.asset("packages/custom_alert_snackbar/assets/deg_mensseger.png")
+                                        :Image.asset("packages/custom_alert_snackbar/assets/fundo_quad.png")
                                       )
                                     ),
                                   ),
@@ -242,7 +255,7 @@ class _CustomAlertSnackLocalState extends State<CustomAlertSnackLocal> {
                               onTap: _close,
                               child: Icon(
                                 Icons.clear_outlined, size: 15,
-                                color: widget.titleColor,
+                                color: widget.titleColor ?? Colors.white,
                               )
                             ),
                           )
